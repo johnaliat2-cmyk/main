@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creative Curriculum | Watch This Space Group</title>
+<!-- Google Fonts: Lato -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#041d2e",
+            "surface-tint": "#456179",
+            "on-secondary-fixed-variant": "#91002e",
+            "primary-fixed": "#cce5ff",
+            "on-tertiary-fixed-variant": "#594400",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#dd2a54",
+            "surface-container-lowest": "#ffffff",
+            "inverse-surface": "#1c3344",
+            "background": "#f7f9ff",
+            "tertiary-fixed": "#ffdf93",
+            "surface-container-highest": "#cee5fc",
+            "secondary-fixed": "#ffdadc",
+            "secondary-fixed-dim": "#ffb2b9",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#adcae5",
+            "inverse-primary": "#adcae5",
+            "on-primary-container": "#88a4be",
+            "on-primary-fixed": "#001e31",
+            "on-error": "#ffffff",
+            "outline": "#73777d",
+            "on-primary": "#ffffff",
+            "surface-bright": "#f7f9ff",
+            "on-tertiary-container": "#503d00",
+            "on-background": "#041d2e",
+            "outline-variant": "#c3c7cd",
+            "on-secondary-fixed": "#40000f",
+            "surface-container": "#e1f0ff",
+            "on-tertiary-fixed": "#241a00",
+            "surface": "#f7f9ff",
+            "surface-dim": "#c6ddf3",
+            "surface-container-low": "#ecf4ff",
+            "on-secondary-container": "#fffbff",
+            "primary": "#032439",
+            "surface-container-high": "#d6ebff",
+            "inverse-on-surface": "#e6f2ff",
+            "on-primary-fixed-variant": "#2d4960",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "secondary": "#b9003d",
+            "error-container": "#ffdad6",
+            "surface-variant": "#cee5fc",
+            "primary-container": "#1d3a50",
+            "on-surface-variant": "#42474c",
+            "tertiary-fixed-dim": "#efc13d",
+            "tertiary-container": "#d1a621",
+            "tertiary": "#765b00"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "gutter": "2rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Lato"],
+            "label-md": ["Lato"],
+            "display-mobile": ["Lato"],
+            "caption": ["Lato"],
+            "display": ["Lato"],
+            "headline-lg": ["Lato"],
+            "body-lg": ["Lato"],
+            "headline-lg-mobile": ["Lato"],
+            "body-md": ["Lato"],
+            "section-label": ["Lato"],
+            "metric-number": ["Lato"],
+            "headline-sm": ["Lato"],
+            "headline-md": ["Lato"]
+          },
+          "fontSize": {
+            "body-sm": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "900" }],
+            "caption": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "900" }],
+            "headline-lg": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-lg": ["19px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "body-md": ["17px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "section-label": ["13px", { "lineHeight": "18px", "letterSpacing": "0.14em", "fontWeight": "700" }],
+            "metric-number": ["44px", { "lineHeight": "48px", "fontWeight": "900" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface font-body-sm text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-primary-container dark:bg-primary sticky top-0 z-50 w-full border-b-[3px] border-secondary dark:border-secondary shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)]">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex items-center justify-between h-20 w-full">
+<!-- Brand Logo Anchor -->
+<a class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-primary dark:text-on-primary flex items-center gap-2" href="#">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed inline-block"></span>
+        Watch This Space Group
+      </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 font-body-sm text-body-sm hover:text-secondary-fixed transition-colors duration-150" href="#">
+          Home
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 font-body-sm text-body-sm hover:text-secondary-fixed transition-colors duration-150" href="#">
+          Opportunity &amp; Market
+        </a>
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary pb-1 font-bold inline-flex items-center gap-1.5 font-body-sm text-body-sm" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+          Creative Curriculum
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 font-body-sm text-body-sm hover:text-secondary-fixed transition-colors duration-150" href="#">
+          Investment
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 font-body-sm text-body-sm hover:text-secondary-fixed transition-colors duration-150" href="#">
+          Pilot Programme
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 font-body-sm text-body-sm hover:text-secondary-fixed transition-colors duration-150" href="#">
+          About
+        </a>
+</nav>
+<!-- Trailing Action Button -->
+<div class="flex items-center gap-3">
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-label-md text-label-md hover:bg-secondary-container transition-all duration-150 shadow-sm active:scale-[0.99]">
+          Request investor pack
+        </button>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO SECTION -->
+<section class="bg-primary-container text-on-primary relative overflow-hidden py-16 md:py-24 border-b border-outline/20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Executive Headline & Academic Statement -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<!-- Academic Indicator / Section Tag -->
+<div class="flex items-center gap-2 mb-4">
+<span class="inline-block px-3 py-1 bg-tertiary-container/30 border-l-4 border-tertiary-fixed text-tertiary-fixed font-section-label text-section-label uppercase tracking-wider">
+                03 / CREATIVE CURRICULUM &amp; ARCHITECTURE
+              </span>
+</div>
+<!-- Hero Accent Bar bounded Headline -->
+<div class="border-l-4 border-tertiary-fixed pl-5 md:pl-6 my-2">
+<h1 class="font-display text-headline-lg-mobile md:text-display text-on-primary leading-tight font-black">
+                A Turnkey Pedagogical Framework for Expressive Arts
+              </h1>
+</div>
+<p class="font-body-lg text-body-md md:text-body-lg text-inverse-on-surface/90 mt-5 max-w-2xl">
+              Bridging generalist teacher confidence with multi-modal physical and digital creative kits, aligned to Scottish Curriculum for Excellence (CfE) and national benchmarks.
+            </p>
+<!-- Metadata Badges Cluster -->
+<div class="mt-8 flex flex-wrap gap-3">
+<div class="bg-primary/60 border border-tertiary-fixed/30 rounded-lg px-4 py-2.5 flex items-center gap-2.5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg" data-icon="inventory_2">inventory_2</span>
+<span class="font-label-md text-label-md text-on-primary">164 Topic Packs (Target Year 5)</span>
+</div>
+<div class="bg-primary/60 border border-tertiary-fixed/30 rounded-lg px-4 py-2.5 flex items-center gap-2.5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg" data-icon="palette">palette</span>
+<span class="font-label-md text-label-md text-on-primary">6 Core Art Modalities</span>
+</div>
+<div class="bg-primary/60 border border-tertiary-fixed/30 rounded-lg px-4 py-2.5 flex items-center gap-2.5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg" data-icon="stairs">stairs</span>
+<span class="font-label-md text-label-md text-on-primary">P1–P7 Progression Framework</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Inspiring Classroom Documentary Photograph -->
+<div class="lg:col-span-5 relative mt-8 lg:mt-0">
+<div class="relative rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-surface-dim">
+<img class="w-full h-[400px] md:h-[480px] object-cover" data-alt="A documentary-style Scottish primary school classroom setting where a diverse group of young pupils collaborate enthusiastically around a rustic wooden activity table. The children explore hands-on expressive arts materials including percussion instruments, color swatches, tactile fabric cutouts, and a secure green tablet display. The bright educational setting features natural daylight pouring through tall institutional windows, bookshelves, and student artwork displayed proudly in the background, exuding collegiate pedagogical rigor and engaging creative discovery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4H7-0JQqXKPSBqxB8Ki6zvRukVUgcAS-iu5PnsEPycf7QyOAF-GNsx9M3YbNhLPHA6NoAK6hkbczASoSmEgd0x2FG2JMv7Tq8KjbqyESOxm3O4xlDPhHbwzEruEs3i202BetRjHkVV6yXwqnrSXrsT0POtCG_LX1PbBTuZLTKDu-WtYosjjPh3_rczN4kn9POcm9wiSBC4EM56lZWRr-z_3JEwT0w7zmykhVhZ0h63xcOIx1Zhxwm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-primary/85 backdrop-blur-md p-3.5 rounded-lg border border-white/10 text-on-primary">
+<div class="flex items-center justify-between text-caption font-caption text-inverse-on-surface">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-fixed text-sm" data-icon="verified">verified</span>
+                    Classroom Pilot Engagement: St Ninian's Cluster
+                  </span>
+<span class="text-tertiary-fixed font-bold">P4 Cohort Session</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 01: SYSTEM ARCHITECTURE (THE MODULAR TOPIC PACK) -->
+<section class="py-20 md:py-28 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<!-- Section Header -->
+<div class="max-w-3xl mb-12">
+<div class="text-tertiary font-section-label text-section-label uppercase tracking-widest font-bold">
+            01 / SYSTEM ARCHITECTURE
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-2 font-bold tracking-tight">
+            Inside the All-Inclusive Topic Pack
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Watch This Space Group eliminates lesson preparation friction for generalist primary educators. Every topic pack arrives fully organized with tactile supplies, structured pedagogical timings, and digital demonstrations engineered for immediate classroom deployment.
+          </p>
+</div>
+<!-- Bento Showcase Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Box Product Imagery Column -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="bg-surface-container-low rounded-xl p-4 md:p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] h-full flex flex-col justify-between">
+<div>
+<span class="inline-block px-3 py-1 bg-surface-container-lowest text-primary font-caption text-caption rounded-lg border border-outline-variant/40 mb-3 font-bold">
+                  MODULAR PHYSICAL UNIT
+                </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Turnkey Box Delivery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-4">
+                  Standardized, reusable storage containing materials for 30 pupils across 6 sequential curriculum stages.
+                </p>
+</div>
+<div class="rounded-lg overflow-hidden border border-outline-variant/40 bg-surface-container-lowest shadow-sm">
+<img class="w-full h-80 object-cover" data-alt="An open educational physical Topic Pack box titled 'Explore &amp; Create The Rainforest Adventure' sitting on a classroom desk. The packaging is organized into custom compartments holding a vibrant assortment of high-grade paints, brush sets, colorful felt sheets, wooden animal figurines, magnifying tools, drama prompt cards, and an illustrated practitioner lesson handbook, photographed in clear natural studio lighting showcasing tactile premium build quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP3wmIIIF34diP63nuvfRXBM1kNSylr49Uk1y6RwAqbFzjZmdVY7ZpS6tiqKUDEz1zBqDSkl8UsOTFizvnuxyluEU9iZ1I-7kZ6u-qAeUET-48BL730yKV0ThEaauNgmJC1QwD8iJdOlGrzS9Y74XqMgmJ0Rk7ugfO9mRW1H990VUXeG460sCSR8TvdR2l5tWBik3JjoZ7MOlf0hJrG_4WPCiYrVg7CBAO6uLFOnbz9z0qMDa09lmn"/>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/40 flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Unit Weight: 3.4 kg</span>
+<span class="text-secondary font-bold">100% Recyclable Materials</span>
+</div>
+</div>
+</div>
+<!-- 4 Breakdown Feature Cards -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Card 1: Tactile Physical Inventory -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:border-primary-container/30 transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="handyman">handyman</span>
+</div>
+<h4 class="font-headline-sm text-label-md md:text-headline-sm text-on-surface font-bold">
+                  Tactile Physical Inventory
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                  High-grade art materials, tactile sculpture components, percussion instruments, fabric, and bespoke drama props for up to 30 pupils with zero classroom top-up required.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-caption font-caption text-primary font-bold">
+                Capacity: 30 Pupils per kit
+              </div>
+</div>
+<!-- Card 2: Step-by-Step Practitioner Guides -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:border-primary-container/30 transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="menu_book">menu_book</span>
+</div>
+<h4 class="font-headline-sm text-label-md md:text-headline-sm text-on-surface font-bold">
+                  Step-by-Step Practitioner Guides
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                  Plain-language, timed 45-60 min lesson scaffolds that give any generalist educator total instructional assurance without prior specialist training.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-caption font-caption text-primary font-bold">
+                Session Cadence: 45–60 Mins
+              </div>
+</div>
+<!-- Card 3: Digital Video Masterclasses -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:border-primary-container/30 transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="play_circle">play_circle</span>
+</div>
+<h4 class="font-headline-sm text-label-md md:text-headline-sm text-on-surface font-bold">
+                  Digital Video Masterclasses
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                  3–5 minute high-fidelity video demonstrations for classroom whiteboard projection, modeling artistic techniques directly to pupils in clear micro-steps.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-caption font-caption text-primary font-bold">
+                Resolution: 4K Projection Ready
+              </div>
+</div>
+<!-- Card 4: CfE & Expressive Benchmark Rubrics -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:border-primary-container/30 transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="fact_check">fact_check</span>
+</div>
+<h4 class="font-headline-sm text-label-md md:text-headline-sm text-on-surface font-bold">
+                  CfE &amp; Expressive Benchmark Rubrics
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                  Pre-mapped assessment criteria measuring pupil engagement, fine motor skills, emotional literacy, and creative expression against Scottish inspection criteria.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-caption font-caption text-primary font-bold">
+                Alignment: Education Scotland CfE
+              </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 02: THE 6 EXPRESSIVE ARTS MODALITIES -->
+<section class="py-20 md:py-28 bg-surface-container-low border-y border-outline-variant/40">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-3xl mb-12">
+<div class="text-tertiary font-section-label text-section-label uppercase tracking-widest font-bold">
+            02 / EXPRESSIVE DISCIPLINES
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-2 font-bold tracking-tight">
+            Multi-Modal Holistic Learning
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Structured intentionally across 6 core disciplinary pillars to guarantee cognitive breadth, emotional development, and technical capability throughout every academic term.
+          </p>
+</div>
+<!-- 6-Card Modality Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1. Art & Design -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:shadow-[0_12px_24px_-6px_rgba(21,44,61,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider">
+                  Modality 01
+                </span>
+<span class="text-caption font-caption text-on-surface-variant font-medium">1.5 hrs / week</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Art &amp; Design</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+                Spatial thinking, color theory, mixed media, Scottish landscape interpretation, and contemporary aesthetic craft.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30">
+<span class="text-caption font-caption font-bold text-primary block mb-1">Key Pupil Outcomes:</span>
+<p class="text-caption font-caption text-on-surface-variant">Fine motor coordination, composition planning, tactile surface sensitivity.</p>
+</div>
+</div>
+<!-- 2. Drama & Roleplay -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:shadow-[0_12px_24px_-6px_rgba(21,44,61,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider">
+                  Modality 02
+                </span>
+<span class="text-caption font-caption text-on-surface-variant font-medium">1.0 hr / week</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Drama &amp; Roleplay</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+                Character perspective taking, emotional regulation, narrative improvisation, and expressive vocal projection.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30">
+<span class="text-caption font-caption font-bold text-primary block mb-1">Key Pupil Outcomes:</span>
+<p class="text-caption font-caption text-on-surface-variant">Empathetic reasoning, public oratory confidence, social dispute resolution.</p>
+</div>
+</div>
+<!-- 3. Dance & Movement -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:shadow-[0_12px_24px_-6px_rgba(21,44,61,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider">
+                  Modality 03
+                </span>
+<span class="text-caption font-caption text-on-surface-variant font-medium">1.0 hr / week</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dance &amp; Movement</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+                Somatic awareness, rhythmic choreography, physical storytelling, and kinetic spatial balance.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30">
+<span class="text-caption font-caption font-bold text-primary block mb-1">Key Pupil Outcomes:</span>
+<p class="text-caption font-caption text-on-surface-variant">Vestibular calibration, non-verbal expression, synchronous group teamwork.</p>
+</div>
+</div>
+<!-- 4. Music & Percussion -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:shadow-[0_12px_24px_-6px_rgba(21,44,61,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider">
+                  Modality 04
+                </span>
+<span class="text-caption font-caption text-on-surface-variant font-medium">1.0 hr / week</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Music &amp; Percussion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+                Rhythmic synchrony, melodic exploration, acoustic polyrhythm, and cultural world music listening exercises.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30">
+<span class="text-caption font-caption font-bold text-primary block mb-1">Key Pupil Outcomes:</span>
+<p class="text-caption font-caption text-on-surface-variant">Auditory discernment, temporal pacing, pitch differentiation.</p>
+</div>
+</div>
+<!-- 5. Creative Writing & Storytelling -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:shadow-[0_12px_24px_-6px_rgba(21,44,61,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider">
+                  Modality 05
+                </span>
+<span class="text-caption font-caption text-on-surface-variant font-medium">1.5 hrs / week</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Creative Writing &amp; Storytelling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+                Expressive mythmaking, poetic rhythm and meter, imaginative worldbuilding, and oral folklore recitation.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30">
+<span class="text-caption font-caption font-bold text-primary block mb-1">Key Pupil Outcomes:</span>
+<p class="text-caption font-caption text-on-surface-variant">Metaphorical literacy, narrative structuring, vocabulary expansion.</p>
+</div>
+</div>
+<!-- 6. Digital Media & Animation -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/60 shadow-[0_2px_8px_-2px_rgba(21,44,61,0.05)] hover:shadow-[0_12px_24px_-6px_rgba(21,44,61,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider">
+                  Modality 06
+                </span>
+<span class="text-caption font-caption text-on-surface-variant font-medium">1.0 hr / week</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Digital Media &amp; Animation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+                Stop-motion claymation, classroom audio soundscape recording, and digital creative portfolio documentation.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30">
+<span class="text-caption font-caption font-bold text-primary block mb-1">Key Pupil Outcomes:</span>
+<p class="text-caption font-caption text-on-surface-variant">Digital authoring ethics, sequencing mechanics, multimedia synthesis.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: CURRICULUM PROGRESSION ACROSS STAGES -->
+<section class="py-20 md:py-28 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-3xl mb-12">
+<div class="text-tertiary font-section-label text-section-label uppercase tracking-widest font-bold">
+            03 / PEDAGOGIC PROGRESSION
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-2 font-bold tracking-tight">
+            Structured Developmental Scaffolding (Early to Second Level)
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Pedagogical progression mapped directly to Scottish Curriculum for Excellence levels, ensuring age-appropriate cognitive challenge, fine-motor calibration, and expressive fluency.
+          </p>
+</div>
+<!-- Academic Data Table -->
+<div class="overflow-x-auto rounded-xl border border-outline-variant/60 shadow-sm bg-surface-container-lowest">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b-2 border-tertiary-container">
+<th class="p-4 md:py-5 md:px-6 font-label-md text-label-md text-primary font-bold">Stage Level</th>
+<th class="p-4 md:py-5 md:px-6 font-label-md text-label-md text-primary font-bold">Cohort Age</th>
+<th class="p-4 md:py-5 md:px-6 font-label-md text-label-md text-primary font-bold">Pedagogical Focus &amp; Modality Objectives</th>
+<th class="p-4 md:py-5 md:px-6 font-label-md text-label-md text-primary font-bold">CfE Benchmark Metric</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30 font-body-sm text-body-sm text-on-surface">
+<!-- Early Level -->
+<tr class="hover:bg-surface-container/20 transition-colors">
+<td class="p-4 md:py-5 md:px-6 font-bold text-primary align-top">
+<span class="inline-block px-2.5 py-1 bg-surface-container-high rounded text-caption font-bold">
+                    Early Level (P1)
+                  </span>
+</td>
+<td class="p-4 md:py-5 md:px-6 align-top text-on-surface-variant font-medium">Ages 4–5</td>
+<td class="p-4 md:py-5 md:px-6 align-top">
+<strong class="text-on-surface block mb-1">Sensory discovery &amp; baseline motor control:</strong>
+                  Tactile confidence, imaginative play, free exploration of sound and texture, baseline gross/fine motor control, and associative color play.
+                </td>
+<td class="p-4 md:py-5 md:px-6 align-top text-on-surface-variant">
+                  EXA 0-01a to EXA 0-14a: Explores media, sounds, and physical rhythms with confidence.
+                </td>
+</tr>
+<!-- First Level -->
+<tr class="bg-surface-container-low/30 hover:bg-surface-container/20 transition-colors">
+<td class="p-4 md:py-5 md:px-6 font-bold text-primary align-top">
+<span class="inline-block px-2.5 py-1 bg-surface-container-high rounded text-caption font-bold">
+                    First Level (P2–P4)
+                  </span>
+</td>
+<td class="p-4 md:py-5 md:px-6 align-top text-on-surface-variant font-medium">Ages 6–8</td>
+<td class="p-4 md:py-5 md:px-6 align-top">
+<strong class="text-on-surface block mb-1">Collaborative storytelling &amp; technique:</strong>
+                  Mixed-modality expression, foundational technique in drawing/sculpting, structured role-play improvisation, rhythmic synchrony, and peer appreciation.
+                </td>
+<td class="p-4 md:py-5 md:px-6 align-top text-on-surface-variant">
+                  EXA 1-02a to EXA 1-15a: Creates and presents expressive works demonstrating intentional design.
+                </td>
+</tr>
+<!-- Second Level -->
+<tr class="hover:bg-surface-container/20 transition-colors">
+<td class="p-4 md:py-5 md:px-6 font-bold text-primary align-top">
+<span class="inline-block px-2.5 py-1 bg-surface-container-high rounded text-caption font-bold">
+                    Second Level (P5–P7)
+                  </span>
+</td>
+<td class="p-4 md:py-5 md:px-6 align-top text-on-surface-variant font-medium">Ages 9–12</td>
+<td class="p-4 md:py-5 md:px-6 align-top">
+<strong class="text-on-surface block mb-1">Critical creative thinking &amp; autonomy:</strong>
+                  Independent portfolio projects, multi-disciplinary media production, stop-motion animation, nuanced characterization, and cultural contextual awareness.
+                </td>
+<td class="p-4 md:py-5 md:px-6 align-top text-on-surface-variant">
+                  EXA 2-04a to EXA 2-18a: Evaluates personal creative output and integrates varied aesthetic styles.
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 04: COMPLIANCE & PRICING NOTE -->
+<section class="py-12 bg-surface-container-low border-t border-outline-variant/40">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border border-outline-variant/60 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-fixed text-2xl" data-icon="gavel">gavel</span>
+</div>
+<div>
+<span class="inline-block px-2 py-0.5 bg-surface-container text-primary font-section-label text-caption rounded font-bold uppercase tracking-wider mb-1">
+                PRICING &amp; IMPLEMENTATION SPECIFICATION
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                £25 per pupil / year <span class="font-normal text-body-sm text-on-surface-variant">(working price)</span>
+</h3>
+<p class="font-caption text-caption text-on-surface-variant mt-1 max-w-2xl">
+                All figures illustrative, not forecast sales. Commercial pricing model accounts for school cluster bulk procurement, seasonal kit replenishment, and continuous digital curriculum library updates. Timing and release conditions require investor agreement.
+              </p>
+</div>
+</div>
+<div class="flex-shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low rounded-lg text-primary font-label-md text-caption border border-outline-variant/40">
+<span class="material-symbols-outlined text-base" data-icon="lock">lock</span>
+              Commercial in Confidence
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION BANNER -->
+<section class="bg-primary-container text-on-primary py-16 md:py-20 relative border-t-2 border-secondary">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin text-center">
+<span class="text-tertiary-fixed font-section-label text-section-label uppercase tracking-widest block mb-3 font-bold">
+          ACADEMIC &amp; INVESTOR ENGAGEMENT
+        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary max-w-3xl mx-auto font-bold tracking-tight">
+          Review the Complete Creative Curriculum Directory
+        </h2>
+<p class="font-body-md text-body-md text-inverse-on-surface/90 mt-4 max-w-2xl mx-auto">
+          Explore complete syllabus documentation, pilot feedback matrices, and financial projections for national local authority rollouts across Scotland.
+        </p>
+<div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-3.5 rounded-full font-label-md text-label-md hover:bg-secondary-container transition-all duration-150 shadow-md active:scale-[0.99] flex items-center gap-2">
+<span>Request investor pack</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="border-2 border-on-primary text-on-primary hover:bg-white hover:text-primary-container px-8 py-3.5 rounded-full font-label-md text-label-md transition-all duration-150 flex items-center gap-2">
+<span>View Sample Topic Pack Module</span>
+<span class="material-symbols-outlined text-base" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-primary dark:bg-inverse-surface border-t border-outline/20 dark:border-outline/40">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-space-lg w-full">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-outline/20">
+<div>
+<span class="text-headline-sm font-headline-sm font-bold text-on-primary dark:text-inverse-on-surface tracking-tight block">
+            Watch This Space Group
+          </span>
+<p class="font-caption text-caption text-on-primary-container mt-1">
+            Institutional educational technology &amp; creative pedagogy systems.
+          </p>
+</div>
+<div class="flex items-center gap-2 text-on-primary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
+<a class="hover:text-tertiary-fixed transition-colors" href="mailto:invest@watchthisspacegroup.com">
+            invest@watchthisspacegroup.com
+          </a>
+</div>
+</div>
+<!-- Links Cluster -->
+<div class="flex flex-wrap items-center gap-y-2 gap-x-6">
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm hover:text-tertiary-fixed transition-colors duration-150" href="#">
+          Investor Portal
+        </a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm hover:text-tertiary-fixed transition-colors duration-150" href="#">
+          Governance &amp; Compliance
+        </a>
+<a class="text-tertiary-fixed font-bold text-body-sm font-body-sm hover:text-tertiary-fixed transition-colors duration-150" href="#">
+          Curriculum Framework
+        </a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm hover:text-tertiary-fixed transition-colors duration-150" href="#">
+          Privacy Policy
+        </a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm hover:text-tertiary-fixed transition-colors duration-150" href="#">
+          Terms of Service
+        </a>
+</div>
+<!-- Disclaimer & Copyright -->
+<div class="pt-2 text-caption font-caption text-on-primary-container/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<p>
+          Registered in Scotland. Forecasts are not trading results. Illustrative, not forecast sales. All rights reserved.
+        </p>
+<span class="text-caption font-caption text-on-primary-container/60">
+          © 2025 Watch This Space Group Ltd.
+        </span>
+</div>
+</div>
+</footer>
+</body></html>

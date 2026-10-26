@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About &amp; Team | Watch This Space Group</title>
+<!-- Google Fonts: Lato -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#c6ddf3",
+            "surface-variant": "#cee5fc",
+            "primary-fixed-dim": "#adcae5",
+            "tertiary": "#765b00",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#e6f2ff",
+            "on-secondary-fixed": "#40000f",
+            "on-tertiary-container": "#503d00",
+            "primary": "#032439",
+            "outline-variant": "#c3c7cd",
+            "inverse-surface": "#1c3344",
+            "tertiary-container": "#d1a621",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#d6ebff",
+            "surface-container": "#e1f0ff",
+            "on-tertiary-fixed-variant": "#594400",
+            "surface-bright": "#f7f9ff",
+            "on-primary-fixed": "#001e31",
+            "surface": "#f7f9ff",
+            "on-primary-container": "#88a4be",
+            "primary-fixed": "#cce5ff",
+            "secondary": "#b9003d",
+            "on-tertiary-fixed": "#241a00",
+            "on-background": "#041d2e",
+            "on-secondary-fixed-variant": "#91002e",
+            "on-error": "#ffffff",
+            "surface-tint": "#456179",
+            "on-secondary-container": "#fffbff",
+            "tertiary-fixed": "#ffdf93",
+            "tertiary-fixed-dim": "#efc13d",
+            "on-surface": "#041d2e",
+            "surface-container-low": "#ecf4ff",
+            "on-error-container": "#93000a",
+            "secondary-container": "#dd2a54",
+            "background": "#f7f9ff",
+            "secondary-fixed-dim": "#ffb2b9",
+            "outline": "#73777d",
+            "on-surface-variant": "#42474c",
+            "secondary-fixed": "#ffdadc",
+            "primary-container": "#1d3a50",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#adcae5",
+            "on-primary-fixed-variant": "#2d4960",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#cee5fc"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "2rem"
+          },
+          "fontFamily": {
+            "display": ["Lato"],
+            "headline-lg-mobile": ["Lato"],
+            "headline-md": ["Lato"],
+            "label-md": ["Lato"],
+            "display-mobile": ["Lato"],
+            "body-sm": ["Lato"],
+            "section-label": ["Lato"],
+            "body-lg": ["Lato"],
+            "metric-number": ["Lato"],
+            "headline-sm": ["Lato"],
+            "caption": ["Lato"],
+            "headline-lg": ["Lato"],
+            "body-md": ["Lato"]
+          },
+          "fontSize": {
+            "display": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "900" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "900" }],
+            "body-sm": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "section-label": ["13px", { "lineHeight": "18px", "letterSpacing": "0.14em", "fontWeight": "700" }],
+            "body-lg": ["19px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "metric-number": ["44px", { "lineHeight": "48px", "fontWeight": "900" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "700" }],
+            "caption": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-lg": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-md": ["17px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar (Shared Component: JSON Blueprint) -->
+<header class="sticky top-0 z-50 bg-primary-container dark:bg-primary border-b-[3px] border-secondary dark:border-secondary shadow-sm">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex items-center justify-between h-20 w-full">
+<!-- Brand Logo / Product Name -->
+<a class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-primary dark:text-on-primary flex items-center gap-2" href="#">
+<span class="inline-block w-2.5 h-6 bg-tertiary-fixed rounded-sm"></span>
+        Watch This Space Group
+      </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-7">
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 text-body-sm font-body-sm transition-colors duration-150" href="#">
+          Home
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 text-body-sm font-body-sm transition-colors duration-150" href="#">
+          Opportunity &amp; Market
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 text-body-sm font-body-sm transition-colors duration-150" href="#">
+          Creative Curriculum
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 text-body-sm font-body-sm transition-colors duration-150" href="#">
+          Investment
+        </a>
+<a class="text-on-primary dark:text-on-primary opacity-90 hover:opacity-100 font-medium inline-flex items-center gap-1.5 text-body-sm font-body-sm transition-colors duration-150" href="#">
+          Pilot Programme
+        </a>
+<!-- Active Nav: "About" exact match hierarchy -->
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary pb-1 font-bold inline-flex items-center gap-1.5 text-body-sm font-body-sm" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed inline-block"></span>
+          About
+        </a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="bg-secondary text-on-secondary px-6 py-2.5 rounded-full text-label-md font-label-md tracking-wider font-bold shadow-md hover:bg-secondary-container transition-all duration-150 transform hover:-translate-y-0.5 active:scale-[0.99] flex items-center gap-2" href="#investor-pack">
+          Request investor pack
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO / HEADER BLOCK (Master Navy #1D3A50) -->
+<section class="bg-primary-container text-on-primary py-16 md:py-24 relative overflow-hidden border-b border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Narrative Left (7 cols) -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Institutional Tag -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/10 border border-tertiary-fixed/30 text-tertiary-fixed text-section-label font-section-label tracking-widest uppercase">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+              05 / LEADERSHIP &amp; GOVERNANCE
+            </div>
+<!-- Hero Headline bounded by Gold Accent Bar -->
+<div class="flex gap-5 items-stretch">
+<div class="w-1.5 bg-tertiary-fixed rounded-sm shrink-0"></div>
+<h1 class="text-headline-lg-mobile md:text-display font-display tracking-tight text-on-primary">
+                Bridging Pedagogical Rigour with Expressive Liberation
+              </h1>
+</div>
+<!-- Tagline -->
+<p class="text-tertiary-fixed font-headline-sm text-headline-sm font-bold">
+              The multidisciplinary team scaling hands-on creative arts across primary education.
+            </p>
+<!-- Lead Narrative -->
+<p class="text-on-primary-container text-body-lg font-body-lg max-w-2xl leading-relaxed">
+              Watch This Space Group was established in Scotland by educators, curriculum designers, and cultural leaders committed to solving generalist teacher workload while ensuring every child receives high-calibre expressive arts learning.
+            </p>
+<!-- Fast Metric Statline -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-xl">
+<div>
+<p class="text-headline-sm font-bold text-tertiary-fixed">100%</p>
+<p class="text-caption font-caption text-on-primary-container">CfE Benchmarked</p>
+</div>
+<div>
+<p class="text-headline-sm font-bold text-on-primary">4+ Hours</p>
+<p class="text-caption font-caption text-on-primary-container">Weekly Prep Saved</p>
+</div>
+<div>
+<p class="text-headline-sm font-bold text-on-primary">EN71</p>
+<p class="text-caption font-caption text-on-primary-container">Child Safety Certified</p>
+</div>
+</div>
+</div>
+<!-- Hero Image & Studio Callout Right (5 cols) -->
+<div class="lg:col-span-5">
+<div class="relative bg-primary/40 p-2 rounded-xl border border-white/15 shadow-2xl">
+<div class="relative rounded-lg overflow-hidden aspect-[4/3] bg-surface-dim">
+<img alt="Executive &amp; Pedagogical Steering Committee at work in the Edinburgh studio space" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmjohjKz-34plqoinBTJnsQyiHow3y8_tx47Td5OgUzgQWMreSG8pGNACih7L_6WkVIyxy6BqbfsgBcx0e5W-qooWiO67FkUy3OxG-QG3ugxAEZ4xhiZ_134-BF0IZ1oq454l_jFDHuR-InwphCddR3i397b-GqzvIV9TLPC9ljzRg908pzkapKRr0F4vSrXGLkIDQq4tFQTZQk-8b6qBI7Uv_YYBfQQ4JApX4qDby76wgJzedlNqC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">location_on</span>
+<span class="text-label-md font-label-md">Edinburgh Design Studio</span>
+</div>
+<span class="text-caption font-caption text-tertiary-fixed bg-black/40 px-2 py-0.5 rounded">Active Session</span>
+</div>
+</div>
+<div class="p-4 bg-primary-container/90 rounded-b-lg">
+<p class="text-caption font-caption text-on-primary-container">
+<strong class="text-on-primary font-bold">Caption:</strong> Executive &amp; Pedagogical Steering Committee reviewing spatial layout blueprints and multimodal topic packs in the Edinburgh studio.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 01: FOUNDATIONAL JOURNEY & PHILOSOPHY (White background) -->
+<section class="bg-surface-container-lowest py-20 border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-3xl mb-14">
+<div class="inline-block text-tertiary font-section-label text-section-label tracking-widest uppercase mb-2">
+            01 / OUR STORY &amp; ETHOS
+          </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary tracking-tight">
+            Rooted in Scottish Classrooms, Engineered for Global Scale
+          </h2>
+<div class="w-16 h-1 bg-secondary mt-4 mb-6"></div>
+<p class="text-on-surface-variant text-body-lg font-body-lg leading-relaxed">
+            For decades, expressive arts in primary education were systematically sidelined—not due to lack of enthusiasm, but from structural prep friction, fragmented specialist training, and generalist teachers balancing overburdened timetables. Watch This Space Group was forged to fundamentally solve this institutional shortfall.
+          </p>
+<p class="text-on-surface text-body-md font-body-md mt-4 leading-relaxed">
+            By fusing turnkey, physical multimodal topic packs with responsive interactive whiteboard masterclasses, WTSG eliminates generalist preparation strain while democratising foundational artistic competencies across every classroom.
+          </p>
+</div>
+<!-- 3 Pillar Cards (Panel #F2F4F8 style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-surface-bright border border-outline-variant/40 rounded-xl p-8 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">schedule</span>
+</div>
+<p class="text-caption font-caption text-secondary font-bold uppercase tracking-wider mb-1">Pillar 01</p>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Generalist Teacher Empowerment</h3>
+<p class="text-on-surface-variant text-body-sm font-body-sm leading-relaxed">
+                Eliminating 4+ hours of weekly preparation friction with ready-to-teach, structured tactile kits and scripted video masterclasses that restore classroom instructional confidence.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-caption font-caption text-primary font-bold">
+<span>Time Saved Metric</span>
+<span class="text-secondary font-bold">4.2 hrs / wk</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-bright border border-outline-variant/40 rounded-xl p-8 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<p class="text-caption font-caption text-secondary font-bold uppercase tracking-wider mb-1">Pillar 02</p>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Curricular Integrity (CfE Aligned)</h3>
+<p class="text-on-surface-variant text-body-sm font-body-sm leading-relaxed">
+                Mapped directly to Scottish Curriculum for Excellence expressive benchmarks, ensuring measurable developmental progression in line, form, tactile manipulation, and spatial awareness.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-caption font-caption text-primary font-bold">
+<span>Standard Mappings</span>
+<span class="text-secondary font-bold">CfE Levels 1 &amp; 2</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-bright border border-outline-variant/40 rounded-xl p-8 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">accessibility_new</span>
+</div>
+<p class="text-caption font-caption text-secondary font-bold uppercase tracking-wider mb-1">Pillar 03</p>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-3">Universal Accessibility &amp; Inclusion</h3>
+<p class="text-on-surface-variant text-body-sm font-body-sm leading-relaxed">
+                Equitable tactile physical supplies paired with intuitive digital masterclasses, ensuring neurodivergent learners and under-resourced schools experience zero creative friction.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-caption font-caption text-primary font-bold">
+<span>Equity Framework</span>
+<span class="text-secondary font-bold">100% Inclusion</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 02: EXECUTIVE LEADERSHIP TEAM (Panel #F2F4F8 Section) -->
+<section class="bg-surface-bright py-20 border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="text-tertiary font-section-label text-section-label tracking-widest uppercase mb-2">
+              02 / EXECUTIVE LEADERSHIP
+            </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary tracking-tight">
+              Seasoned Educational, Operational &amp; Creative Direction
+            </h2>
+</div>
+<div class="mt-4 md:mt-0 text-body-sm font-body-sm text-on-surface-variant max-w-sm">
+            Proven institutional stewardship combining decades of Scottish pedagogical leadership with tech scale-up discipline.
+          </div>
+</div>
+<!-- 3 Executive Profiles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Executive 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm hover:border-primary/40 transition-all duration-200">
+<div class="h-48 bg-primary-container relative p-6 flex flex-col justify-end text-on-primary">
+<div class="absolute top-4 right-4 bg-tertiary-fixed text-on-tertiary-fixed text-caption font-caption font-bold px-2.5 py-1 rounded">
+                Founding Executive
+              </div>
+<div class="w-14 h-14 rounded-full bg-surface-container-high border-2 border-tertiary-fixed flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[32px]">person</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-primary">Chief Executive Officer</h3>
+<p class="text-tertiary-fixed text-label-md font-label-md">&amp; Co-Founder</p>
+</div>
+<div class="p-6 space-y-4">
+<p class="text-on-surface text-body-sm font-body-sm leading-relaxed">
+                Educational technology veteran and former Scottish education authority strategist. Architect of commercial models bridging public council procurement with venture scalability.
+              </p>
+<div class="space-y-2 pt-2 border-t border-outline-variant/20 text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>15+ Years Public Sector EdTech Policy</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">domain</span>
+<span>Former Regional Learning Authority Lead</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Executive 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm hover:border-primary/40 transition-all duration-200">
+<div class="h-48 bg-primary-container relative p-6 flex flex-col justify-end text-on-primary">
+<div class="absolute top-4 right-4 bg-tertiary-fixed text-on-tertiary-fixed text-caption font-caption font-bold px-2.5 py-1 rounded">
+                Pedagogical Lead
+              </div>
+<div class="w-14 h-14 rounded-full bg-surface-container-high border-2 border-tertiary-fixed flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[32px]">auto_stories</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-primary">Head of Curriculum</h3>
+<p class="text-tertiary-fixed text-label-md font-label-md">&amp; Pedagogical Design</p>
+</div>
+<div class="p-6 space-y-4">
+<p class="text-on-surface text-body-sm font-body-sm leading-relaxed">
+                Primary education specialist with 18+ years leading Curriculum for Excellence expressive arts delivery. Pioneer of cross-curricular STEM-to-STEAM frameworks.
+              </p>
+<div class="space-y-2 pt-2 border-t border-outline-variant/20 text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>18+ Years Classroom &amp; CfE Advisory</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">history_edu</span>
+<span>Scottish Expressive Arts Working Group</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Executive 3 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm hover:border-primary/40 transition-all duration-200">
+<div class="h-48 bg-primary-container relative p-6 flex flex-col justify-end text-on-primary">
+<div class="absolute top-4 right-4 bg-tertiary-fixed text-on-tertiary-fixed text-caption font-caption font-bold px-2.5 py-1 rounded">
+                Supply Operations
+              </div>
+<div class="w-14 h-14 rounded-full bg-surface-container-high border-2 border-tertiary-fixed flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[32px]">inventory_2</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-primary">Director of Operations</h3>
+<p class="text-tertiary-fixed text-label-md font-label-md">&amp; Supply Chain</p>
+</div>
+<div class="p-6 space-y-4">
+<p class="text-on-surface text-body-sm font-body-sm leading-relaxed">
+                Industrial manufacturing and child-safe EN71 logistics director. Expert in ethical procurement, high-volume kit assembly, and distribution across 2,000+ school gates.
+              </p>
+<div class="space-y-2 pt-2 border-t border-outline-variant/20 text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>ISO 9001 / EN71 Certified Compliance</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_shipping</span>
+<span>Scalable UK &amp; EU Educational Fulfillment</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: ADVISORY COUNCIL & GOVERNANCE (White background) -->
+<section class="bg-surface-container-lowest py-20 border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+<div>
+<div class="text-tertiary font-section-label text-section-label tracking-widest uppercase mb-2">
+              03 / ADVISORY COUNCIL &amp; GOVERNANCE
+            </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary tracking-tight">
+              Institutional Due Diligence &amp; Safeguarding
+            </h2>
+</div>
+<!-- Compliance Verified Tag -->
+<div class="mt-4 md:mt-0 flex items-center gap-2 bg-surface-bright border border-secondary/30 px-3 py-1.5 rounded text-caption font-caption text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>All advisory positions formally ratified and legal/management cleared.</span>
+</div>
+</div>
+<!-- Advisory Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Advisory 1 -->
+<div class="p-6 rounded-lg border border-outline-variant/30 bg-surface-bright space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-caption font-caption font-bold text-secondary uppercase tracking-wider">Governance Chair</span>
+<span class="material-symbols-outlined text-primary text-[20px]">gavel</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Educational Governance Lead</h3>
+<p class="text-on-surface-variant text-body-sm font-body-sm">
+              Former Inspector of Education, ensuring complete adherence to institutional transparency, local authority funding compliance, and national inspection standards.
+            </p>
+<div class="pt-2 text-caption font-caption text-outline">
+              Clearance Status: <strong class="text-primary font-bold">Cleared by Legal / Active</strong>
+</div>
+</div>
+<!-- Advisory 2 -->
+<div class="p-6 rounded-lg border border-outline-variant/30 bg-surface-bright space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-caption font-caption font-bold text-secondary uppercase tracking-wider">Classroom Liaison</span>
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Primary Headteacher Council Liaison</h3>
+<p class="text-on-surface-variant text-body-sm font-body-sm">
+              Active primary consortium leadership representation, advising on headteacher budgeting cycles, cluster deployment, and pupil equity fund integration.
+            </p>
+<div class="pt-2 text-caption font-caption text-outline">
+              Clearance Status: <strong class="text-primary font-bold">Cleared by Legal / Active</strong>
+</div>
+</div>
+<!-- Advisory 3 -->
+<div class="p-6 rounded-lg border border-outline-variant/30 bg-surface-bright space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-caption font-caption font-bold text-secondary uppercase tracking-wider">Ethics &amp; Protection</span>
+<span class="material-symbols-outlined text-primary text-[20px]">shield</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Child Safeguarding &amp; Digital Ethics</h3>
+<p class="text-on-surface-variant text-body-sm font-body-sm">
+              Advising on GDPR compliance for school interactive whiteboards, pupil data anonymisation, and child-centred accessible interface design.
+            </p>
+<div class="pt-2 text-caption font-caption text-outline">
+              Clearance Status: <strong class="text-primary font-bold">Cleared by Legal / Active</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: MEMORIAL TRIBUTE PANEL (Master Navy #1D3A50 box / callout card) -->
+<section class="bg-surface-bright py-16">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="bg-primary-container rounded-xl p-8 md:p-12 border-2 border-tertiary-fixed/40 shadow-xl relative overflow-hidden">
+<!-- Background Decorative Crest Elements -->
+<div class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-white/5 pointer-events-none"></div>
+<div class="max-w-3xl relative z-10 space-y-5">
+<!-- Memorial Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-black/30 border border-tertiary-fixed/50 text-tertiary-fixed text-section-label font-section-label tracking-widest uppercase">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+              MEMORIAL TRIBUTE
+            </div>
+<!-- Title & Distinct Disclaimer -->
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-primary tracking-tight">
+                In Memoriam: David Henderson
+              </h2>
+<p class="text-tertiary-fixed font-label-md text-label-md font-bold mt-1 tracking-wide">
+                Honouring Foundational Legacy • Not a Current Adviser
+              </p>
+</div>
+<!-- Tribute Body Text -->
+<p class="text-on-primary/90 text-body-lg font-body-lg leading-relaxed italic border-l-2 border-tertiary-fixed pl-5">
+              "We respectfully honour the foundational vision, enduring pedagogical passion, and deep commitment of the late David Henderson to Scottish education. His profound belief in the transformative power of expressive arts in every classroom remains woven into the guiding ethos and institutional ambitions of Watch This Space Group."
+            </p>
+<div class="flex items-center gap-4 pt-2 text-caption font-caption text-on-primary-container">
+<span>Watch This Space Group Foundation Archive</span>
+<span>•</span>
+<span>Perpetual Inscription</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: CALL TO ACTION (Master Navy Band) -->
+<section class="bg-primary-container text-on-primary py-16 border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-8 bg-surface-bright/5 p-8 md:p-12 rounded-xl border border-white/10">
+<div class="space-y-3 max-w-2xl text-center lg:text-left">
+<span class="text-tertiary-fixed text-section-label font-section-label tracking-widest uppercase">Institutional Dialogue</span>
+<h2 class="text-headline-lg-mobile md:text-headline-md font-headline-md text-on-primary">
+              Connect with Leadership &amp; Governance
+            </h2>
+<p class="text-on-primary-container text-body-sm font-body-sm">
+              Institutional investors, municipal education authorities, and school cluster leaders are invited to request our full governance disclosure dossiers and commercial expansion pack.
+            </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="bg-secondary text-on-secondary px-7 py-3 rounded-full text-label-md font-label-md font-bold tracking-wider shadow-lg hover:bg-secondary-container transition-all duration-150 transform hover:-translate-y-0.5" href="#investor-pack">
+              Request investor pack
+            </a>
+<a class="bg-transparent border-2 border-white text-on-primary px-7 py-3 rounded-full text-label-md font-label-md font-bold hover:bg-white hover:text-primary transition-all duration-150" href="mailto:governance@watchthisspacegroup.com">
+              Contact Governance Office
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- REGULATORY COMPLIANCE CONTAINER -->
+<section class="bg-surface-bright py-8 border-t border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/40 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[28px] mt-0.5 shrink-0">lock</span>
+<div class="space-y-1">
+<h4 class="text-label-md font-label-md font-bold text-primary">Mandatory Regulatory Compliance &amp; Disclosure Notice</h4>
+<p class="text-caption font-caption text-outline leading-relaxed">
+              £25 per pupil represents our working price model. Forecasts are not trading results. Illustrative, not forecast sales. Timing and release conditions require investor agreement. Registered in Scotland.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component: JSON Blueprint) -->
+<footer class="bg-primary dark:bg-inverse-surface border-t border-outline/20 dark:border-outline/40 text-on-primary dark:text-inverse-on-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-space-lg w-full">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-white/10 pb-8">
+<div>
+<span class="text-headline-sm font-headline-sm font-bold text-on-primary dark:text-inverse-on-surface tracking-tight">
+            Watch This Space Group
+          </span>
+<p class="text-caption font-caption text-on-primary-container mt-1">
+            Edinburgh • Glasgow • St Andrews | Direct Inquiries: <a class="text-tertiary-fixed underline" href="mailto:invest@watchthisspacegroup.com">invest@watchthisspacegroup.com</a>
+</p>
+</div>
+<nav class="flex flex-wrap gap-x-6 gap-y-2">
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Investor Portal</a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Governance &amp; Compliance</a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Curriculum Framework</a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Privacy Policy</a>
+<a class="text-on-primary-container dark:text-outline-variant hover:text-on-primary text-body-sm font-body-sm transition-colors duration-150" href="#">Terms of Service</a>
+</nav>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center text-caption font-caption text-on-primary-container gap-4">
+<p>Registered in Scotland. Forecasts are not trading results. Illustrative, not forecast sales. All rights reserved.</p>
+<p>© 2025 Watch This Space Group Ltd. Strict Governance &amp; Educational Standards.</p>
+</div>
+</div>
+</footer>
+</body></html>

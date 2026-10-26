@@ -1,0 +1,6 @@
+{
+  "name": "Hagiazo Hair | Premium Braids & Hair Studio",
+  "description": "Premium hair services in the heart of Harlow, Essex. Knotless braids, Fulani braids, French curls, and custom wigs crafted with patience and precision. Be set apart.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

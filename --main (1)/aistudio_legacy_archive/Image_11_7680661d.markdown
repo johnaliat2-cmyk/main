@@ -1,0 +1,244 @@
+---
+name: Visionary Institutional
+colors:
+  surface: '#f7f9ff'
+  surface-dim: '#c6ddf3'
+  surface-bright: '#f7f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#ecf4ff'
+  surface-container: '#e1f0ff'
+  surface-container-high: '#d6ebff'
+  surface-container-highest: '#cee5fc'
+  on-surface: '#041d2e'
+  on-surface-variant: '#42474c'
+  inverse-surface: '#1c3344'
+  inverse-on-surface: '#e6f2ff'
+  outline: '#73777d'
+  outline-variant: '#c3c7cd'
+  surface-tint: '#456179'
+  primary: '#032439'
+  on-primary: '#ffffff'
+  primary-container: '#1d3a50'
+  on-primary-container: '#88a4be'
+  inverse-primary: '#adcae5'
+  secondary: '#b9003d'
+  on-secondary: '#ffffff'
+  secondary-container: '#dd2a54'
+  on-secondary-container: '#fffbff'
+  tertiary: '#765b00'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#d1a621'
+  on-tertiary-container: '#503d00'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#cce5ff'
+  primary-fixed-dim: '#adcae5'
+  on-primary-fixed: '#001e31'
+  on-primary-fixed-variant: '#2d4960'
+  secondary-fixed: '#ffdadc'
+  secondary-fixed-dim: '#ffb2b9'
+  on-secondary-fixed: '#40000f'
+  on-secondary-fixed-variant: '#91002e'
+  tertiary-fixed: '#ffdf93'
+  tertiary-fixed-dim: '#efc13d'
+  on-tertiary-fixed: '#241a00'
+  on-tertiary-fixed-variant: '#594400'
+  background: '#f7f9ff'
+  on-background: '#041d2e'
+  surface-variant: '#cee5fc'
+typography:
+  display:
+    fontFamily: Lato
+    fontSize: 52px
+    fontWeight: '900'
+    lineHeight: 60px
+    letterSpacing: -0.02em
+  display-mobile:
+    fontFamily: Lato
+    fontSize: 36px
+    fontWeight: '900'
+    lineHeight: 44px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Lato
+    fontSize: 38px
+    fontWeight: '700'
+    lineHeight: 46px
+    letterSpacing: -0.01em
+  headline-lg-mobile:
+    fontFamily: Lato
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: 0em
+  headline-md:
+    fontFamily: Lato
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+  headline-sm:
+    fontFamily: Lato
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 30px
+  section-label:
+    fontFamily: Lato
+    fontSize: 13px
+    fontWeight: '700'
+    lineHeight: 18px
+    letterSpacing: 0.14em
+  body-lg:
+    fontFamily: Lato
+    fontSize: 19px
+    fontWeight: '400'
+    lineHeight: 30px
+  body-md:
+    fontFamily: Lato
+    fontSize: 17px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-sm:
+    fontFamily: Lato
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  label-md:
+    fontFamily: Lato
+    fontSize: 14px
+    fontWeight: '700'
+    lineHeight: 20px
+    letterSpacing: 0.04em
+  metric-number:
+    fontFamily: Lato
+    fontSize: 44px
+    fontWeight: '900'
+    lineHeight: 48px
+  caption:
+    fontFamily: Lato
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 2rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+The design system projects an authoritative, visionary, and academically grounded institutional ethos tailored for high-level educational technology, impact ventures, and investment governance. It communicates institutional gravitas, pedagogical insight, and commercial viability. The visual language blends traditional British collegiate rigor with agile financial technology polish.
+
+### Visual Principles
+- **Scholarly Authority with Strategic Momentum**: Clean structures, rigorous information architecture, and metric-forward clarity. Content should feel thoroughly researched, validated, and executive-ready.
+- **Editorial Contrast**: Deep academic navies paired with crisp whites and light architectural slate surfaces, energized by precise highlights of institutional gold and deliberate crimson interventions.
+- **Precision Structuring**: Generous breathing space combined with fine hairline dividers (`#E2E8F0`), high-contrast structural columns, and metric displays that respect rigorous compliance and institutional due diligence.
+
+## Colors
+
+The palette leverages high-contrast traditional tones reinterpreted with modern digital precision.
+
+### Functional Palette Roles
+- **Primary Navy (`#1D3A50`)**: Represents institutional stability. Used for primary typography, dominant header containers, hero blocks, dark structural bands, and primary iconography.
+- **Deep Navy (`#152C3D`)**: The anchor tone. Reserved for the sub-footer, ultra-deep high-contrast surfaces, and contextual hover states on navy backgrounds.
+- **Crimson (`#D11F4C`)**: Direct action and narrative checkpoints. Applied strictly to primary interactive targets (CTA buttons), timeline indices, active indicators, and the prominent 3px global rule directly under the primary navigation bar.
+- **Crimson Dark (`#B01840`)**: State change tone. Used exclusively for hovered/active primary CTA buttons.
+- **Academic Gold (`#F8C945`)**: Intellectual illumination. Applied to editorial metadata labels (e.g., `01 / THE CLASSROOM NEED`), vertical hero anchor lines, table header underlines, and prominent KPI highlights.
+- **Panel / Surface (`#F2F4F8`)**: The contextual canvas. Softens reading fatigue across alternating content modules, modular card backdrops, data rows, and structured metadata callouts.
+- **Pure White (`#FFFFFF`)**: Base canvas for primary narrative zones, crisp raised card surfaces, and input controls.
+- **Border / Hairline (`#E2E8F0`)**: Low-contrast boundaries for data tables, card perimeters, and modular separators.
+
+## Typography
+
+The typographic hierarchy centers on **Lato**, balancing humanist proportions with structural geometry. 
+
+### Implementation Guidelines
+- **Body Text**: Standard long-form reading text defaults to 17px (`body-md`) with a generous 28px line height to ensure clarity across dense pedagogical analysis and prospectus reports.
+- **Section Labels**: Editorial sub-headers (e.g., `01 / THE CLASSROOM NEED`) are uppercase, rendered in `section-label` (13px, 700 weight, +0.14em letter-spacing). On dark `#1D3A50` backgrounds, they must be displayed in Academic Gold (`#F8C945`); on light surfaces, use Navy (`#1D3A50`) or Crimson (`#D11F4C`).
+- **Headlines**: Weighted at 700 to 900 in Navy (`#1D3A50`) or Pure White (`#FFFFFF`). Avoid thin weights for titles to maintain an authoritative tone.
+- **Disclaimers & Footnotes**: Compliance notes, regulatory frameworks, and investor warnings use `caption` (12px) in muted slate `#64748B`.
+
+## Layout & Spacing
+
+The layout is built on a 12-column institutional grid designed for structured data presentations, split narrative sections, and asymmetric executive callouts.
+
+### Responsive Grids & Canvas
+- **Desktop (1200px and up)**: 12-column grid with a max container width of 1280px, 32px (`2rem`) gutters, and minimum 48px (`3rem`) page margins.
+- **Tablet (768px - 1199px)**: 8-column grid with 24px gutters and 32px canvas margins.
+- **Mobile (below 768px)**: 4-column fluid grid, 16px (`1rem`) gutters, and 20px (`1.25rem`) margins.
+
+### Vertical Rhythm & Alternating Bands
+Full-width band transitions demarcate thought leadership phases:
+- Alternate between Pure White (`#FFFFFF`) and Panel / Surface (`#F2F4F8`) for standard sections.
+- Anchor sections (such as Hero headers, investment executive summaries, and final call-to-actions) utilize dark Navy (`#1D3A50`) bands.
+- Spacing between disparate thematic sections spans 80px to 112px on desktop, scaling down to 48px on mobile viewports.
+
+## Elevation & Depth
+
+Visual hierarchy emphasizes surface differentiation, precise structural hairpins, and subtle tactile grounding rather than deep floating drops.
+
+### Elevation Levels
+- **Ground Floor (Flat / Recessed)**: `#F2F4F8` surfaces for secondary module sections, table stripes, and inner metric card wells. Elevation: none; structural separation via 1px `#E2E8F0` borders.
+- **Level 1 (Card Baseline)**: Pure White (`#FFFFFF`) cards mounted over `#F2F4F8` backdrops. Outlined with `1px solid #E2E8F0`, paired with an ambient institutional shadow: `0 2px 8px -2px rgba(21, 44, 61, 0.05), 0 1px 4px -1px rgba(21, 44, 61, 0.03)`.
+- **Level 2 (Active & Hover Cards)**: Elevated interactive cards on hover. Border shifts to `rgba(29, 58, 80, 0.20)` with shadow: `0 12px 24px -6px rgba(21, 44, 61, 0.08), 0 4px 8px -2px rgba(21, 44, 61, 0.04)`.
+- **Level 3 (Modals & Overlays)**: Executive data briefs, filter menus, and compliance notices. Framed with a 1px border (`rgba(255, 255, 255, 0.1)` on dark, `#CBD5E1` on light), cast with `0 24px 48px -12px rgba(21, 44, 61, 0.22)`.
+
+## Shapes
+
+The design system relies on a **Soft** foundational geometry (`roundedness: 1`), keeping containers grounded, crisp, and executive, while selectively utilizing pill forms for focused micro-interactions.
+
+### Shape Hierarchy
+- **Standard UI Cards & Containers**: `0.5rem` (`rounded-lg`) corner radius provides a modern profile without sacrificing traditional institutional structure.
+- **Input Fields, Dropdowns & Small Cards**: `0.25rem` (base radius) for crisp data entry and data sheets.
+- **Pill Exceptions**:
+  - Primary, Secondary, and Tertiary CTA buttons leverage full pill borders (`9999px`) to visually stand out against rectilinear analytical layouts.
+  - Category tags, status pills, and stage markers use full pill borders (`9999px`).
+- **Metric Circular Rings**: Full 50% circle displays used for analytical percentage representations and progress tracking.
+
+## Components
+
+### Header & Navigation
+- **Global Header**: Background `#1D3A50` with pure white navigation typography (15px, 700 weight). Features a permanent, unyielding **3px Crimson (`#D11F4C`) horizontal rule** running along the complete lower edge.
+- **Active Navigation Items**: Signaled with an active Crimson accent underline or text color, accompanied by subtle Gold (`#F8C945`) indicator dots for live states.
+
+### Buttons
+- **Primary CTA**: Crimson (`#D11F4C`) fill, pure white text, pill-shaped (`border-radius: 9999px`), padding: `12px 28px`. Hover state: Crimson Dark (`#B01840`) with an intentional translateY(-1px) elevation shift.
+- **Secondary Navy CTA**: Deep Navy (`#1D3A50`) fill, pure white text, pill-shaped. Hover: `#152C3D`.
+- **Outline / Editorial CTA**: Transparent background, 2px border in `#1D3A50` (or White `#FFFFFF` on dark bands), 15px bold text. Hover: Solid `#1D3A50` fill with White text.
+
+### Section Labels & Hero Accents
+- **Hero Accent Bar**: In the primary hero, the main headline is bounded on the left by an unbroken vertical Gold bar: `4px width`, solid `#F8C945`, spanning the full height of the headline group.
+- **Section Headers**: Structured as an uppercase label (`01 / THE CLASSROOM NEED`) directly followed by a dominant h2 headline. 
+
+### Metric Circular Displays & Timeline
+- **Metric Rings**: Circular progress gauges using an SVG stroke model. Base ring: `#E2E8F0` (or `rgba(255,255,255,0.1)` on navy); active value ring: `#F8C945` or `#D11F4C`. Centered metrics display `metric-number` (44px, 900 weight).
+- **Timeline Progression**: Connected via a continuous 2px vertical or horizontal line (`#E2E8F0`). Milestones display sequence numerals contained within circular Crimson (`#D11F4C`) badges with crisp white numbers.
+
+### Data Tables
+- **Table Headers**: Bold Navy typography on `#FFFFFF` or `#F2F4F8`. The entire `thead` row features a persistent **2px solid Academic Gold (`#F8C945`) bottom border**.
+- **Rows**: Alternating zebra striping: Row A `#FFFFFF`, Row B `#F2F4F8`. Hairline horizontal dividers (`1px solid #E2E8F0`). Cell padding: `14px 20px`. Text is 15px with tabular numerical alignment.
+
+### Cards
+- **Executive Card**: `#FFFFFF` background, `0.5rem` border radius, `1px solid #E2E8F0`, 24px to 32px interior padding.
+- **Impact Card (Navy)**: Full `#1D3A50` fill, white typography, subtle gold header callout, 1px border in `rgba(248, 201, 69, 0.25)`.
+
+### Form Controls
+- **Inputs & Selects**: Height: 48px. White background with `1px solid #CBD5E1`, `0.25rem` radius. 16px body text. On focus: 1.5px border in `#1D3A50` with an outer ring of `rgba(29, 58, 80, 0.1)`.
+- **Checkboxes & Radios**: 20px square/circle with a 1.5px border in `#1D3A50`. Checked state: Crimson (`#D11F4C`) fill with a white checkmark.
+
+### Compliance & Regulatory Disclaimers
+- Placed above the footer or beneath investment data in a muted slate container (`#F8FAFC`). Surfaced with a 1px solid `#E2E8F0` perimeter border, 12px caption typography (`#64748B`), and an explicit lock or regulatory icon in primary Navy.
