@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 400px;
+  --font-heading: 'Oswald', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #070707;
+  color: #ffffff;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography helper classes */
+.font-heading {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.font-serif-accent {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Custom hairline borders and dividers */
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.bg-dark-card {
+  background-color: #0f0f0f;
+}
+
+.bg-dark-surface {
+  background-color: #141414;
+}
+
+/* Marquee infinite scroll */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Marquee hair-tool icons: neutral by default, white on hover */
+.marquee-tool {
+  color: #a3a3a3;
+  transition: color 0.3s ease;
+}
+
+.marquee:hover .marquee-tool {
+  color: #ffffff;
+}
+
+/* Scissors cursor over the marquee (desktop / fine-pointer only) */
+@media (hover: hover) and (pointer: fine) {
+  .marquee:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><g fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='25' r='3.2'/><circle cx='9' cy='7' r='3.2'/><path d='M11.5 22.4 26 5.5'/><path d='M11.5 9.6 26 26.5'/></g><g fill='none' stroke='%23000000' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='25' r='3.2'/><circle cx='9' cy='7' r='3.2'/><path d='M11.5 22.4 26 5.5'/><path d='M11.5 9.6 26 26.5'/></g></svg>") 16 16, pointer;
+  }
+
+  /* Cut animation: blades closed while the mouse button is pressed */
+  .marquee:active {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><g fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='25' r='3.2'/><circle cx='9' cy='7' r='3.2'/><path d='M11.5 22.4 26 24'/><path d='M11.5 9.6 26 8'/></g><g fill='none' stroke='%23000000' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='25' r='3.2'/><circle cx='9' cy='7' r='3.2'/><path d='M11.5 22.4 26 24'/><path d='M11.5 9.6 26 8'/></g></svg>") 16 16, pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* Ken Burns slow zoom */
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-ken-burns {
+  animation: kenburns 20s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Automatic one-shot zoom-in for the Our Work header background.
+   Scales 1 -> 1.12 over 14s, ease-out, then holds at 1.12 (no loop). */
+@keyframes kenburns-once {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+
+.animate-ken-burns-once {
+  animation: kenburns-once 14s ease-out forwards;
+  will-change: transform;
+}
+
+/* Subtle slow zoom for the About side image */
+@keyframes kenburns-side {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.06); }
+}
+
+.animate-ken-burns-side {
+  animation: kenburns-side 20s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns-side {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns-once {
+    animation: none;
+  }
+}
+
+/* Remove browser default outlines (mouse/tap) while keeping keyboard focus */
+button,
+a {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   Underline-only CTA system
+   No backgrounds, borders, rings, shadows or boxes. Text + 2px underline.
+   ========================================================================== */
+
+.cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Underline: 2px solid white under the text, offset 8px. Extends slightly
+   beyond the text on hover. */
+.cta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  height: 2px;
+  background: currentColor;
+  transition: left 0.3s ease, right 0.3s ease, opacity 0.3s ease;
+}
+
+.cta:hover::after {
+  left: -0.4rem;
+  right: -0.4rem;
+}
+
+.cta .cta-icon {
+  transition: transform 0.3s ease;
+}
+
+.cta:hover .cta-icon {
+  transform: translateX(4px);
+}
+
+/* Primary: white text */
+.cta-primary {
+  color: #ffffff;
+}
+.cta-primary:hover {
+  color: #ffffff;
+}
+
+/* Secondary: grey-300 text, thin white/40 underline turning white on hover */
+.cta-secondary {
+  color: #d4d4d4;
+}
+.cta-secondary::after {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.cta-secondary:hover {
+  color: #ffffff;
+}
+.cta-secondary:hover::after {
+  background: #ffffff;
+}
+
+/* Navbar variant: same as primary, smaller */
+.cta-nav {
+  font-size: 0.75rem;
+}
+
+/* Staggered fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
